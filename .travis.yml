@@ -16,3 +16,6 @@ install:
 # command to run tests using coverage, e.g. python setup.py test
 script:
     - tox -e py${TRAVIS_PYTHON_VERSION//[.]/}
+
+after_success:
+  - codecov
