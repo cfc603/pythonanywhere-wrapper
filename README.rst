@@ -3,6 +3,12 @@ pythonanywhere
 
 *A PythonAnywhere API wrapper.*
 
+.. image:: https://travis-ci.org/cfc603/pythonanywhere.png?branch=master
+    :target: https://travis-ci.org/cfc603/pythonanywhere
+
+.. image:: https://codecov.io/github/cfc603/pythonanywhere/coverage.svg?branch=master
+    :target: https://codecov.io/github/cfc603/pythonanywhere?branch=master
+
 Usage
 -----
 
