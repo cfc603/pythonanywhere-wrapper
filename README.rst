@@ -117,3 +117,12 @@ Static Files::
     response = client.webapps.static_files.delete(
         domain_name="username.pythonanywhere.com", static_id=123
     )
+
+Credit
+------
+
+This application uses Open Source components. You can find the source code of their open source projects along with license information below. We acknowledge and are grateful to these developers for their contributions to open source.
+
+:Project: chargify-python https://github.com/stevenwei/chargify-python
+:Copyright: Copyright (c) 2010 Hindsight Labs
+:License: (MIT) https://github.com/stevenwei/chargify-python/blob/master/LICENSE
