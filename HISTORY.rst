@@ -4,6 +4,10 @@ History
 UNRELEASED
 ++++++++++
 
+
+0.2.0 (2017-10-21)
+++++++++++++++++++
+
 * name change from pythonanywhere to pythonanywhere-wrapper
 * Add history
 
