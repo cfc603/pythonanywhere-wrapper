@@ -1,8 +1,8 @@
 import pytest
 import responses
 
-from pythonanywhere import API_ENDPOINT
-from pythonanywhere.client import PythonAnywhereError
+from pythonanywhere_wrapper import API_ENDPOINT
+from pythonanywhere_wrapper.client import PythonAnywhereError
 
 
 class PythonAnywhereTestCase(object):

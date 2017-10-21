@@ -4,7 +4,7 @@ from subprocess import call
 
 from setuptools import Command, find_packages, setup
 
-from pythonanywhere import __version__
+from pythonanywhere_wrapper import __version__
 
 
 this_dir = abspath(dirname(__file__))
@@ -28,7 +28,7 @@ class RunTests(Command):
         errno = call(
             [
                 "py.test",
-                "--cov=pythonanywhere",
+                "--cov=pythonanywhere_wrapper",
                 "--cov-report=term-missing",
             ]
         )
@@ -36,11 +36,11 @@ class RunTests(Command):
 
 
 setup(
-    name = "pythonanywhere",
+    name = "pythonanywhere-wrapper",
     version = __version__,
     description = "PythonAnywhere API wrapper.",
     long_description = long_description,
-    url = "https://github.com/cfc603/pythonanywhere",
+    url = "https://github.com/cfc603/pythonanywhere-wrapper",
     author = "Trevor Watson",
     author_email = "wtrevor162@gmail.com",
     license = "MIT",
@@ -60,7 +60,7 @@ setup(
         "Programming Language :: Python :: 3.6",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
-    keywords = "pythonanywhere",
+    keywords = "pythonanywhere pythonanywhere-wrapper pythonanywhere_wrapper",
     packages = find_packages(exclude=["docs", "tests*"]),
     install_requires = ["requests", "simplejson"],
     extras_require = {
@@ -73,5 +73,6 @@ setup(
             "tox",
         ],
     },
+    use_2to3=True,
     cmdclass = {"test": RunTests},
 )
