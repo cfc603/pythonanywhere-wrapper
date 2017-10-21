@@ -9,7 +9,10 @@ from pythonanywhere_wrapper import __version__
 
 this_dir = abspath(dirname(__file__))
 with open(join(this_dir, "README.rst"), encoding="utf-8") as file:
-    long_description = file.read()
+    readme = file.read()
+
+with open(join(this_dir, "HISTORY.rst"), encoding="utf-8") as file:
+    history = file.read()
 
 
 class RunTests(Command):
@@ -39,7 +42,7 @@ setup(
     name = "pythonanywhere-wrapper",
     version = __version__,
     description = "PythonAnywhere API wrapper.",
-    long_description = long_description,
+    long_description = readme + "\n\n" + history,
     url = "https://github.com/cfc603/pythonanywhere-wrapper",
     author = "Trevor Watson",
     author_email = "wtrevor162@gmail.com",
