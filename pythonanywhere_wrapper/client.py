@@ -2,7 +2,7 @@ import getpass
 import os
 import requests
 
-from pythonanywhere import API_ENDPOINT
+from pythonanywhere_wrapper import API_ENDPOINT
 
 
 # Maps certain function names to HTTP verbs

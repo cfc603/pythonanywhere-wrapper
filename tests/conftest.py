@@ -1,6 +1,6 @@
 import pytest
 
-from pythonanywhere.client import PythonAnywhere
+from pythonanywhere_wrapper.client import PythonAnywhere
 
 
 @pytest.fixture(scope="session")

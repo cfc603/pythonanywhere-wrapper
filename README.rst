@@ -1,20 +1,20 @@
-pythonanywhere
+pythonanywhere-wrapper
 ==============
 
 *A PythonAnywhere API wrapper.*
 
-.. image:: https://travis-ci.org/cfc603/pythonanywhere.png?branch=master
-    :target: https://travis-ci.org/cfc603/pythonanywhere
+.. image:: https://travis-ci.org/cfc603/pythonanywhere-wrapper.png?branch=master
+    :target: https://travis-ci.org/cfc603/pythonanywhere-wrapper
 
-.. image:: https://codecov.io/github/cfc603/pythonanywhere/coverage.svg?branch=master
-    :target: https://codecov.io/github/cfc603/pythonanywhere?branch=master
+.. image:: https://codecov.io/github/cfc603/pythonanywhere-wrapper/coverage.svg?branch=master
+    :target: https://codecov.io/github/cfc603/pythonanywhere-wrapper?branch=master
 
 Usage
 -----
 
 ::
 
-    from pythonanywhere.client import PythonAnywhere
+    from pythonanywhere_wrapper.client import PythonAnywhere
 
     # If running on a PythonAnywhere terminal, your token and username will
     # be discovered automatically. Be sure to setup your API_TOKEN first.
