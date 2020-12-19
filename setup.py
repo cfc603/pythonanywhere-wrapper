@@ -43,6 +43,7 @@ setup(
     version = __version__,
     description = "PythonAnywhere API wrapper.",
     long_description = readme + "\n\n" + history,
+    long_description_content_type = "text/x-rst",
     url = "https://github.com/cfc603/pythonanywhere-wrapper",
     author = "Trevor Watson",
     author_email = "wtrevor162@gmail.com",
